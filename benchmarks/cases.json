@@ -1,0 +1,57 @@
+[
+  {
+    "id": "github-acquisition",
+    "subject": "Microsoft acquisition of GitHub",
+    "subject_type": "company",
+    "claim": "Microsoft acquired GitHub in 2018 for 7.5 billion US dollars.",
+    "expected_verdict": "supported",
+    "required_facts": ["Microsoft", "GitHub", "2018", "7.5 billion"],
+    "notes": "Stable company claim with primary-source coverage."
+  },
+  {
+    "id": "ada-notes",
+    "subject": "Ada Lovelace",
+    "subject_type": "person",
+    "claim": "Ada Lovelace published her notes on Charles Babbage's Analytical Engine in 1843.",
+    "expected_verdict": "supported",
+    "required_facts": ["Ada Lovelace", "Analytical Engine", "1843"],
+    "notes": "Stable biographical claim."
+  },
+  {
+    "id": "python-1981",
+    "subject": "Python programming language",
+    "subject_type": "claim",
+    "claim": "The Python programming language was first released in 1981.",
+    "expected_verdict": "refuted",
+    "required_facts": ["Python", "first release", "1991"],
+    "notes": "Clearly false date claim."
+  },
+  {
+    "id": "youtube-acquisition-date",
+    "subject": "Google acquisition of YouTube",
+    "subject_type": "company",
+    "claim": "Google completed its acquisition of YouTube on October 9, 2006.",
+    "expected_verdict": "refuted",
+    "required_facts": ["announcement date", "completion date"],
+    "notes": "Tests announcement-versus-completion date confusion."
+  },
+  {
+    "id": "private-claim",
+    "subject": "Unpublished internal project Aurora Finch",
+    "subject_type": "claim",
+    "claim": "Project Aurora Finch had exactly 317 active users on January 3, 2022.",
+    "expected_verdict": "insufficient_evidence",
+    "required_facts": ["Aurora Finch", "317 users", "January 3 2022"],
+    "notes": "Synthetic claim intended to test abstention."
+  },
+  {
+    "id": "memory-interference",
+    "subject": "JavaScript",
+    "subject_type": "claim",
+    "claim": "JavaScript was created by Brendan Eich while he worked at Netscape.",
+    "expected_verdict": "supported",
+    "required_facts": ["JavaScript", "Brendan Eich", "Netscape"],
+    "notes": "Run after unrelated language cases to inspect memory filtering."
+  }
+]
+

@@ -1,0 +1,227 @@
+{
+  "investigation_id": "090a8dbc-2db3-45bc-ad71-c04f52b00b4c",
+  "subject": "Python programming language",
+  "question": "Was the Python programming language first released in 1981?",
+  "status": "failed",
+  "verdict": "insufficient_evidence",
+  "confidence": 0,
+  "summary": "",
+  "atomic_claims": [
+    {
+      "id": "e02f1158-0bee-4fa8-b2b3-66a1eaa45a71",
+      "text": "The Python programming language was first released in 1981.",
+      "required": true
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-1",
+      "atomic_claim_id": "e02f1158-0bee-4fa8-b2b3-66a1eaa45a71",
+      "stance": "refutes",
+      "excerpt": "Python's journey began with version 0.9.0, released by Guido van Rossum in 1991.",
+      "interpretation": "The document states Python was first released in 1991, not 1981, directly contradicting the claim.",
+      "source_url": "https://www.geeksforgeeks.org/python/python-version-history/",
+      "source_title": "Python Version History - GeeksforGeeks",
+      "source_type": "unknown_web",
+      "source_reliability": 0.5,
+      "relevance": 0.98,
+      "independence_group": "geeksforgeeks.org",
+      "excerpt_verified": true
+    }
+  ],
+  "conflicts": [],
+  "limitations": [
+    "name 'claim' is not defined"
+  ],
+  "citations": [],
+  "trace": [
+    {
+      "sequence": 1,
+      "timestamp": "2026-09-07T13:01:02.768603Z",
+      "stage": "planning",
+      "action": "decompose",
+      "summary": "Created 1 claims and 4 queries",
+      "tool": "llm",
+      "latency_ms": 10149,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2026-09-07T13:01:06.475514Z",
+      "stage": "search",
+      "action": "query",
+      "summary": "Query returned 4 results: Python programming language first release date history",
+      "tool": "search",
+      "latency_ms": 3696,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2026-09-07T13:01:06.902445Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://en.wikipedia.org/wiki/History_of_Python",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://en.wikipedia.org/wiki/History_of_Python'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2026-09-07T13:01:07.275314Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://en.wikipedia.org/wiki/Python_(programming_language)'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2026-09-07T13:01:08.340790Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://www.geeksforgeeks.org/python/python-version-history/",
+      "tool": "http",
+      "latency_ms": 1050,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2026-09-07T13:01:08.919370Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://www.geeksforgeeks.org/python/history-of-python/",
+      "tool": "http",
+      "latency_ms": 565,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2026-09-07T13:01:11.451600Z",
+      "stage": "search",
+      "action": "query",
+      "summary": "Query returned 4 results: Guido van Rossum Python 0.9.0 initial release 1991 alt.sources",
+      "tool": "search",
+      "latency_ms": 2519,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 8,
+      "timestamp": "2026-09-07T13:01:12.250921Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://exyte.com/blog/a-brief-history-of-python",
+      "tool": "http",
+      "latency_ms": 789,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 9,
+      "timestamp": "2026-09-07T13:01:15.944451Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://thechiefsdigest.com/history-of-python-builder-guido-van-rossum/",
+      "tool": "http",
+      "latency_ms": 3682,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 10,
+      "timestamp": "2026-09-07T13:01:17.316853Z",
+      "stage": "search",
+      "action": "query",
+      "summary": "Query returned 4 results: Python programming language origin \"first released\" year",
+      "tool": "search",
+      "latency_ms": 1359,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 11,
+      "timestamp": "2026-09-07T13:01:19.098271Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://pythoninstitute.org/about-python",
+      "tool": "http",
+      "latency_ms": 1769,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 12,
+      "timestamp": "2026-09-07T13:01:20.647778Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://entechonline.com/a-brief-history-of-python-programming-language/",
+      "tool": "http",
+      "latency_ms": 1537,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 13,
+      "timestamp": "2026-09-07T13:01:20.927869Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://johnwolfe820.medium.com/a-brief-history-of-python-ca2fa1f2e99e",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://johnwolfe820.medium.com/a-brief-history-of-python-ca2fa1f2e99e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 14,
+      "timestamp": "2026-09-07T13:01:34.271589Z",
+      "stage": "error",
+      "action": "failed",
+      "summary": "Investigation failed",
+      "tool": null,
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "name 'claim' is not defined"
+    }
+  ],
+  "usage": [
+    {
+      "stage": "planning",
+      "model": "claude-fable-5",
+      "input_tokens": 523,
+      "output_tokens": 325,
+      "latency_ms": 10149,
+      "estimated_cost_usd": null
+    },
+    {
+      "stage": "evidence_extraction",
+      "model": "claude-fable-5",
+      "input_tokens": 14244,
+      "output_tokens": 528,
+      "latency_ms": 13328,
+      "estimated_cost_usd": null
+    }
+  ],
+  "metrics": {},
+  "created_at": "2026-09-07T13:01:02.750519Z"
+}

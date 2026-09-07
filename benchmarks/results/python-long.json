@@ -1,0 +1,316 @@
+{
+  "investigation_id": "b12f521e-b84c-48ed-99e8-402c04ae81bf",
+  "subject": "Python programming language",
+  "question": "Was the Python programming language first released in 1981?",
+  "status": "completed",
+  "verdict": "refuted",
+  "confidence": 0.927,
+  "summary": "The claim that the Python programming language was first released in 1981 is refuted by the verified evidence. Two independent web sources contradict the claim: one states that the first public release of Python occurred on February 20, 1991, when Guido van Rossum posted version 0.9.0 to the alt.sources Usenet newsgroup (ev-1), and the other explicitly rejects 1981 (along with 1972 and 1995) as Python's origin date, stating the language was conceived in December 1989 by Guido van Rossum (ev-2). Both excerpts were verified and both directly refute the 1981 release date. No conflicting evidence supporting a 1981 release was found. The evidence establishes that Python's first public release was in 1991, a decade after the year asserted in the claim.",
+  "atomic_claims": [
+    {
+      "id": "e00afd26-87f3-451d-ac1a-4a5ed1c2c41c",
+      "text": "The Python programming language was first released in 1981.",
+      "required": true
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-1",
+      "atomic_claim_id": "e00afd26-87f3-451d-ac1a-4a5ed1c2c41c",
+      "stance": "refutes",
+      "excerpt": "The first public release of Python happened on February 20, 1991, when Guido van Rossum posted version 0.9.0 to the alt.sources newsgroup on Usenet.",
+      "interpretation": "The document states Python's first public release occurred in 1991, not 1981, directly contradicting the claim.",
+      "source_url": "https://www.centerconsulting.com/code-library/milestones/1991-python-released",
+      "source_title": "Python 0.9.0 Released to alt.sources (1991) | CenterConsulting",
+      "source_type": "unknown_web",
+      "source_reliability": 0.5,
+      "relevance": 1,
+      "independence_group": "centerconsulting.com",
+      "excerpt_verified": true
+    },
+    {
+      "id": "ev-2",
+      "atomic_claim_id": "e00afd26-87f3-451d-ac1a-4a5ed1c2c41c",
+      "stance": "refutes",
+      "excerpt": "Contrary to popular misconception, Python wasn't developed in 1995, 1972, or 1981. The programming language was conceived in December 1989 by Guido van Rossum",
+      "interpretation": "The source explicitly rejects 1981 as Python's origin date and states the first public release, Python 0.9.0, came in February 1991, refuting the claim of a 1981 release.",
+      "source_url": "https://www.wajusoft.com/blog/when-was-python-developed-all-your-questions-answered",
+      "source_title": "When Was Python Developed? Discover Its History and Rise to Fame",
+      "source_type": "unknown_web",
+      "source_reliability": 0.5,
+      "relevance": 0.95,
+      "independence_group": "wajusoft.com",
+      "excerpt_verified": true
+    }
+  ],
+  "conflicts": [],
+  "limitations": [
+    "The tool-call budget was exhausted before additional evidence could be retrieved.",
+    "Both evidence sources are from web pages of unknown institutional provenance with moderate reliability scores (0.5); no primary-source or high-authority documentation (e.g., official Python Software Foundation records or the original Usenet posting) was among the verified evidence.",
+    "The precise 1991 release date is asserted by the sources but was not corroborated by a primary or authoritative source within this investigation; however, this does not affect the refutation of the 1981 claim, which both sources independently contradict."
+  ],
+  "citations": [
+    "https://www.centerconsulting.com/code-library/milestones/1991-python-released",
+    "https://www.wajusoft.com/blog/when-was-python-developed-all-your-questions-answered"
+  ],
+  "trace": [
+    {
+      "sequence": 1,
+      "timestamp": "2026-09-07T13:36:10.892148Z",
+      "stage": "memory",
+      "action": "retrieve",
+      "summary": "Retrieved 0 provenance-backed candidate memories",
+      "tool": null,
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2026-09-07T13:36:10.903032Z",
+      "stage": "planning",
+      "action": "decompose",
+      "summary": "Created 1 claims and 4 queries",
+      "tool": "llm",
+      "latency_ms": 10149,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2026-09-07T13:36:12.052212Z",
+      "stage": "search",
+      "action": "query",
+      "summary": "Query returned 4 results: Python programming language first release date history",
+      "tool": "search",
+      "latency_ms": 1140,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2026-09-07T13:36:12.498353Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://en.wikipedia.org/wiki/History_of_Python",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://en.wikipedia.org/wiki/History_of_Python'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2026-09-07T13:36:12.887041Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://en.wikipedia.org/wiki/Python_(programming_language)'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2026-09-07T13:36:13.573748Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://www.geeksforgeeks.org/python/python-version-history/",
+      "tool": "http",
+      "latency_ms": 676,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2026-09-07T13:36:14.236325Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://www.geeksforgeeks.org/python/history-of-python/",
+      "tool": "http",
+      "latency_ms": 650,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 8,
+      "timestamp": "2026-09-07T13:36:17.967162Z",
+      "stage": "search",
+      "action": "query",
+      "summary": "Query returned 4 results: Guido van Rossum Python 0.9.0 initial release 1991 alt.sources",
+      "tool": "search",
+      "latency_ms": 3717,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 9,
+      "timestamp": "2026-09-07T13:36:19.168102Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://achievements.ai/milestone/python-developed-by-guido-van-rossum",
+      "tool": "http",
+      "latency_ms": 1188,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 10,
+      "timestamp": "2026-09-07T13:36:20.223117Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://www.centerconsulting.com/code-library/milestones/1991-python-released",
+      "tool": "http",
+      "latency_ms": 1042,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 11,
+      "timestamp": "2026-09-07T13:36:20.477253Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://alexmoltzau.medium.com/the-evolution-of-python-and-the-fear-of-dying-languages-69dc18d0d660",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://alexmoltzau.medium.com/the-evolution-of-python-and-the-fear-of-dying-languages-69dc18d0d660'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 12,
+      "timestamp": "2026-09-07T13:36:22.140647Z",
+      "stage": "search",
+      "action": "query",
+      "summary": "Query returned 4 results: Python programming language origin \"first released\" year",
+      "tool": "search",
+      "latency_ms": 1651,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 13,
+      "timestamp": "2026-09-07T13:36:22.577939Z",
+      "stage": "retrieve",
+      "action": "fetch",
+      "summary": "https://www.wajusoft.com/blog/when-was-python-developed-all-your-questions-answered",
+      "tool": "http",
+      "latency_ms": 425,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 14,
+      "timestamp": "2026-09-07T13:36:22.831778Z",
+      "stage": "retrieve",
+      "action": "fetch_failed",
+      "summary": "https://www.quora.com/Why-was-the-Python-programming-language-originally-created",
+      "tool": "http",
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": "Client error '403 Forbidden' for url 'https://www.quora.com/Why-was-the-Python-programming-language-originally-created'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    },
+    {
+      "sequence": 15,
+      "timestamp": "2026-09-07T13:36:35.385638Z",
+      "stage": "evidence",
+      "action": "extract",
+      "summary": "Accepted 2/2 evidence items after quote validation",
+      "tool": "llm",
+      "latency_ms": 12519,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 16,
+      "timestamp": "2026-09-07T13:36:35.395175Z",
+      "stage": "analysis",
+      "action": "score",
+      "summary": "verdict=refuted, coverage=1.00",
+      "tool": null,
+      "latency_ms": null,
+      "confidence": 0.927,
+      "verdict": "refuted",
+      "error": null
+    },
+    {
+      "sequence": 17,
+      "timestamp": "2026-09-07T13:36:35.405417Z",
+      "stage": "budget",
+      "action": "tool_limit_reached",
+      "summary": "Skipped gap analysis because no retrieval tool calls remained",
+      "tool": null,
+      "latency_ms": null,
+      "confidence": null,
+      "verdict": null,
+      "error": null
+    },
+    {
+      "sequence": 18,
+      "timestamp": "2026-09-07T13:36:45.276995Z",
+      "stage": "report",
+      "action": "complete",
+      "summary": "Completed with 2 verified evidence items",
+      "tool": "llm",
+      "latency_ms": 9859,
+      "confidence": 0.927,
+      "verdict": "refuted",
+      "error": null
+    }
+  ],
+  "usage": [
+    {
+      "stage": "planning",
+      "model": "claude-fable-5",
+      "input_tokens": 523,
+      "output_tokens": 325,
+      "latency_ms": 10149,
+      "estimated_cost_usd": null
+    },
+    {
+      "stage": "evidence_extraction",
+      "model": "claude-fable-5",
+      "input_tokens": 9633,
+      "output_tokens": 778,
+      "latency_ms": 12519,
+      "estimated_cost_usd": null
+    },
+    {
+      "stage": "final_reflection",
+      "model": "claude-fable-5",
+      "input_tokens": 1300,
+      "output_tokens": 521,
+      "latency_ms": 9859,
+      "estimated_cost_usd": null
+    }
+  ],
+  "metrics": {
+    "evidence_coverage": 1,
+    "citation_validity": 1,
+    "source_diversity": 0.667,
+    "verified_evidence_items": 2,
+    "directional_evidence_items": 2,
+    "neutral_evidence_items": 0,
+    "resolved_claims": 1,
+    "required_claims": 1,
+    "tool_calls": 12,
+    "model_calls": 3,
+    "input_tokens": 11456,
+    "output_tokens": 1624,
+    "estimated_cost_usd": null
+  },
+  "created_at": "2026-09-07T13:36:10.880427Z"
+}
